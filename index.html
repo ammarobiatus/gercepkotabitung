@@ -29,10 +29,10 @@
             z-index: 0;
             display: flex;
             transition: transform 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-            width: 300%; 
+            width: 400%; 
         }
         .slide {
-            width: 33.3333%;
+            width: 25%;
             height: 100%;
             background-size: cover;
             background-position: center;
@@ -149,11 +149,15 @@
     </nav>
 
   <section class="relative h-screen min-h-[850px] flex items-center pt-20 overflow-hidden hero-gradient">
-    <div class="slider-container" id="mainSlider">
-        <div class="slide" style="background-image: url('gercep wana biru.jpg');"></div>
-        <div class="slide" style="background-image: url('alur pendaftaran sk hak.jpeg');"></div>
-        <div class="slide" style="background-image: url('alur gercep 3 hari kerja banner.png');"></div>
-    </div>
+      <div class="slider-container" id="mainSlider">
+    <div class="slide" style="background-image: url('gercep wana biru.jpg');"></div>
+    <div class="slide" style="background-image: url('alur pendaftaran sk hak.jpeg');"></div>
+    <div class="slide" style="background-image: url('alur gercep 3 hari kerja banner.png');"></div>
+
+    <div class="slide" style="background-image: url('slide1.jpg');"></div>
+</div>
+
+
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center lg:justify-start">
         <div id="heroTextContent" class="text-white animate-fade-in transition-all duration-700">
@@ -304,7 +308,7 @@
      const sliderContainer = document.getElementById('mainSlider');
 const heroText = document.getElementById('heroTextContent');
 let currentIdx = 0;
-const totalSlides = 3;
+const totalSlides = 4;
 
 
     function nextSlide() {
